@@ -114,26 +114,26 @@ class KISS():
         return data
 
 class ROM():
-    PRODUCT_RNODE  = 0x03
-    MODEL_E4       = 0xE4
+    PRODUCT_RNODE       = 0x03
+    MODEL_E4            = 0xE4
 
-    ADDR_PRODUCT   = 0x00
-    ADDR_MODEL     = 0x01
-    ADDR_HW_REV    = 0x02
-    ADDR_SERIAL    = 0x03
-    ADDR_MADE      = 0x07
-    ADDR_CHKSUM    = 0x0B
-    ADDR_SIGNATURE = 0x1B
-    ADDR_INFO_LOCK = 0x9B
-    ADDR_CONF_SF   = 0x9C
-    ADDR_CONF_CR   = 0x9D
-    ADDR_CONF_TXP  = 0x9E
-    ADDR_CONF_BW   = 0x9F
-    ADDR_CONF_FREQ = 0xA3
-    ADDR_CONF_OK   = 0xA7
+    ADDR_PRODUCT        = 0x00
+    ADDR_MODEL          = 0x01
+    ADDR_HW_REV         = 0x02
+    ADDR_SERIAL         = 0x03
+    ADDR_MADE           = 0x07
+    ADDR_CHKSUM         = 0x0B
+    ADDR_SIGNATURE      = 0x1B
+    ADDR_INFO_LOCK      = 0x9B
+    ADDR_CONF_SF        = 0x9C
+    ADDR_CONF_CR        = 0x9D
+    ADDR_CONF_TXP       = 0x9E
+    ADDR_CONF_BW        = 0x9F
+    ADDR_CONF_FREQ      = 0xA3
+    ADDR_CONF_OK        = 0xA7
 
-    INFO_LOCK_BYTE = 0x73
-    CONF_OK_BYTE   = 0x73
+    INFO_LOCK_BYTE      = 0x73
+    CONF_OK_BYTE        = 0x73
 
 class RNode():
     def __init__(self, serial_instance):
@@ -639,7 +639,7 @@ def main():
     import serial
 
     try:
-        parser = argparse.ArgumentParser(description="RNode Configuration and firmware utility. This program allows you to change various settings and startup modes of RNode. It can also flash and update the firmware, and manage device EEPROM.")
+        parser = argparse.ArgumentParser(description="KC1AWV Custom RNode Configuration and firmware utility. This program allows you to change various settings and startup modes of RNode. It can also flash and update the firmware, and manage device EEPROM.")
         parser.add_argument("-i", "--info", action="store_true", help="Show device info")
         parser.add_argument("-T", "--tnc", action="store_true", help="Switch device to TNC mode")
         parser.add_argument("-N", "--normal", action="store_true", help="Switch device to normal mode")
